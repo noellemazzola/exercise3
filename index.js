@@ -5,4 +5,4 @@ let quotes = [`"No one can do  everything, but everyone can do something" -Max L
 //console.log(3 * Math.random())
 //console.log (Math.floor((3 * Math.random())))
 let index = Math.floor((quotes.length * Math.random()))
-console.log(quotes[index])
+console.log(quotes[index]) 
