@@ -9,13 +9,14 @@ export function flattening(inputList) {
 console.log(flattening(arrays))
 
 //3.2 loop(value, test, update, body)
-export function loop(value, test, update) {
+export function loop(value, test, update, body) {
     while (test(value)) {
-        update(value)
+        body(value)
+        value = update(value)
     }
 }
 
-
+loop(3, n => n > 0, n => n - 1, console.log);
 //3.3 everyLoop(array, test)
 
 
