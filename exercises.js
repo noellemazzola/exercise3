@@ -7,7 +7,13 @@ export function flattening(inputList) {
 }
 
 console.log(flattening(arrays))
+
 //3.2 loop(value, test, update, body)
+export function loop(value, test, update) {
+    while (test(value)) {
+        update(value)
+    }
+}
 
 
 //3.3 everyLoop(array, test)
