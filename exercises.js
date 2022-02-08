@@ -1,4 +1,5 @@
 //3.1 flattening(list)
+// look at about 1 hour and 35 minutes for help
 let arrays = [[1, 2, 3], [4, 5], [6]]
 
 export function flattening(inputList) {
