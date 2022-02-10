@@ -32,7 +32,7 @@ console.log(everyLoop([2, 4, 16], n => n < 10));
 console.log(everyLoop([], n => n < 10));
 
 export function everySome(array, test) {
-    
+    array.some(test)
 }
 
 console.log(everySome([1, 3, 5], n => n < 10));
