@@ -32,9 +32,14 @@ console.log(everyLoop([2, 4, 16], n => n < 10));
 console.log(everyLoop([], n => n < 10));
 
 export function everySome(array, test) {
-    return !array.some(item => !test(item))
+    return !array.some(item => {
+        console.log("Applying the test to " + item + " with result " + test(item))
+        if (!test(item)) {
+            console.log("I found an item that doesn't meet the test!")
+        }
+        return !test(item)
+})
 }
-
 console.log(everySome([1, 3, 5], n => n < 10));
 console.log(everySome([2, 4, 16], n => n < 10));
 console.log(everySome([], n => n < 10));
