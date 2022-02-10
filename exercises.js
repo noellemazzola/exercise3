@@ -8,7 +8,12 @@ export function flattening(list) {
 console.log(flattening(arrays))
 
 //3.2 loop(value, test, update, body)
-export function loop(value, test, update, body)
+export function loop(value, test, update, body) {
+    for(let curValue = value; test(curValue); curValue = update(curValue)) {
+        body(curValue)
+    }
+}
+
 loop(3, n => n > 0, n => n -1, console.log);
 
 
