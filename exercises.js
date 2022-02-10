@@ -24,4 +24,5 @@ function everyLoop(array, test) {
     for(let item of array) {
         returnValue = returnValue && test(item)
     }
+    return returnValue
 }
