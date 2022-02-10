@@ -14,7 +14,6 @@ export function loop(value, test, update, body) {
         body(curValue)
     }
 }
-
 loop(3, n => n > 0, n => n -1, console.log);
 
 //3.3 everyLoop(array, test)
