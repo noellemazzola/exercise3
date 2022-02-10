@@ -19,7 +19,7 @@ loop(3, n => n > 0, n => n -1, console.log);
 //3.3 everyLoop(array, test)
 //3.4 everySome(array, test)
 
-function everyLoop(array, test) {
+export function everyLoop(array, test) {
     let returnValue = true
     for(let item of array) {
         returnValue = returnValue && test(item)
@@ -31,8 +31,8 @@ console.log(everyLoop([1, 3, 5], n => n < 10));
 console.log(everyLoop([2, 4, 16], n => n < 10));
 console.log(everyLoop([], n => n < 10));
 
-function everySome(array, test) {
-
+export function everySome(array, test) {
+    
 }
 
 console.log(everySome([1, 3, 5], n => n < 10));
